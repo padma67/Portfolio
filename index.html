@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -19,21 +21,28 @@
 
   <body>
     <div id="a"></div>
+    <script type="text/javascript">
+      var side=document.getElementById("side");
+      var text="view";
+      function click(){
+         if(text==="view"){
+          side,style.display="block";
+          text="hide";
+         }
+         else{
+          side.style.display="none";
+          text="view";
+         }
+      }
+
+    </script>
 
     <script type="text/babel">
-  
-   const Name=()=><div style={{marginLeft:"15px",color:"white"}}><h1 style={{marginLeft:"31px"}} >Padmavathi</h1><p style={{textAlign:"center",fontSize:"17px"}}>Hi, iam Padmavathi and iam a software developer. welcome to my personal website.</p></div>
-   const A1=()=><a href="#" style={{color:"white"}}><i className="fab fa-facebook-f"></i></a>
-    const A2=()=><a href="https://github.com/padma67" style={{color:"white"}}><i class="fab fa-github"></i></a>
-     const A3=()=><a href="#" style={{color:"white"}}><i class="fab fa-twitter"></i></a>
-      const A4=()=><a  href="mailto:padmaeee1056@gmail.com" style={{color:"white"}}><i class="fab fa-invision"></i></a>
-   const Contact=()=><div style={{marginTop:"45px"}}><tr style={{fontSize:"21px"}}><td><div style={{marginLeft:"35px"}}><A1/></div></td><td><div style={{marginLeft:"35px"}}><A2/></div></td><td><div style={{marginLeft:"35px"}}><A3/></div></td><td><div style={{marginLeft:"35px"}}><A4/></div></td></tr></div>
+    
+   
+   const Nav=()=><div style={{width:'100%',height:"45px",backgroundColor:"blue"}}><a href="sidebar.html" style={{color:"white"}} target="_self" ><i class="fas fa-bars"></i></a></div>
 
-   const About=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}} ><a href="mypofie.html" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-circle ip" ></i>About Me</a></div>
-   const Resume=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-briefcase ip"></i> Resume</a></div>
-   const Portfolio=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-graduate ip"></i>Portfolio</a></div>
-   const Phone=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-circle ip" ></i> Contact</a></div>
-   const SideDiv=()=><div style={{width:"21%",height:"655px",backgroundColor:"DarkOrchid",position:"fixed",left:"0px"}}><Name/><Contact/><About/><Resume/><Portfolio/><Phone/></div>
+  
 
    const Div11=()=><div style={{width:"45%",height:"255px",marginLeft:"285px",borderRadius:"55px",border:"9px solid Darkblue",boxShadow:"1px 1px 9px 1px",backgroundColor:"Skyblue"}}><div style={{marginLeft:"75px",width:"65%"}}><h1 style={{textAlign:"center"}}>Padmavathi M</h1><p style={{textAlign:"center"}}>Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as a web developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p><a href="myprofie.html" style={{width:"55px",marginLeft:"65px",fontSize:"21px",textDecoration:"none",color:"white"}}> View My Resume</a></div></div>
    const Div1=()=><div  style={{width:"105%",height:"255px",position:"absolute",top:"15px"}}><Div11/></div>
@@ -70,12 +79,12 @@
             <p>International symposium on Technical education as a tool for sustainable development</p>
             <p>Convention on direct and indirect taxes in India (GST) by Department  of management.</p></div>
    </div>
-   const MainDiv1=()=><div style={{width:"79%",height:"1935px",position:"absolute",left:"275px",top:"0px"}}><Div1/><Div2/><Education/><Activities/><Workshop/></div>
+   const MainDiv1=()=><div style={{width:"100%",height:"1935px",position:"absolute",top:"50px"}}><Div1/><Div2/><Education/><Activities/><Workshop/></div>
 
 
 
 
-   const Maindiv=()=><div style={{width:"95%",height:"flex",position:"absolute",top:"0px",fontFamily:"Roboto"}}><SideDiv/><MainDiv1/></div>
+   const Maindiv=()=><div style={{width:"95%",height:"flex",position:"absolute",top:"0px",fontFamily:"Roboto"}}><Nav/><MainDiv1/></div>
 
 
    ReactDOM.render(<Maindiv/>,document.getElementById("a"));
