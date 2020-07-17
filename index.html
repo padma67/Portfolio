@@ -3,6 +3,7 @@
   <head>
     <title>Portfolio</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -39,23 +40,24 @@
     <script type="text/babel">
     
    
-   const Nav=()=><div style={{width:'100%',height:"45px",backgroundColor:"blue"}}><a href="sidebar.html" style={{color:"white"}} target="_self" ><i class="fas fa-bars"></i></a></div>
+   const Nav=()=><div style={{width:'100%',height:"45px",backgroundColor:"blue",position:"absolute"}}><a href="sidebar.html" style={{color:"white"}} target="_self" ><i class="fas fa-bars"></i></a></div>
 
   
 
-   const Div11=()=><div style={{width:"45%",height:"255px",marginLeft:"285px",borderRadius:"55px",border:"9px solid Darkblue",boxShadow:"1px 1px 9px 1px",backgroundColor:"Skyblue"}}><div style={{marginLeft:"75px",width:"65%"}}><h1 style={{textAlign:"center"}}>Padmavathi M</h1><p style={{textAlign:"center"}}>Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as a web developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p><a href="myprofie.html" style={{width:"55px",marginLeft:"65px",fontSize:"21px",textDecoration:"none",color:"white"}}> View My Resume</a></div></div>
+   const Div11=()=><div style={{width:"45%",height:"255px",marginLeft:"285px",borderRadius:"55px",border:"9px solid Darkblue",boxShadow:"1px 1px 9px 1px",backgroundColor:"Skyblue",position:"absolute"}}><div style={{marginLeft:"75px",width:"65%"}}><h1 style={{textAlign:"center"}}>Padmavathi M</h1><p style={{textAlign:"center"}}>Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as a web developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p><a href="myprofie.html" style={{width:"55px",marginLeft:"65px",fontSize:"21px",textDecoration:"none",color:"white"}}> View My Resume</a></div></div>
    const Div1=()=><div  style={{width:"105%",height:"255px",position:"absolute",top:"15px"}}><Div11/></div>
+
    const Skill=(props)=><h2>{props.name}</h2>
    const Skildet=(props)=><p>{props.det}</p>
-   const Div21=()=><td  ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSA6DkRonP_NSzoXTf13QZ2uHLZGQhNmhwSgDP84s8j-RcpbnP&usqp=CAU"/><Skill name="javascript"/><Skildet det="JavaScript is the programming language of HTML and the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced."/></div></td>
+   const Div21=()=><div style={{width:'95%',height:"65px",position:"absolute"}}><img style={{width:"55px",height:"55px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSA6DkRonP_NSzoXTf13QZ2uHLZGQhNmhwSgDP84s8j-RcpbnP&usqp=CAU"/><Skill name="javascript"/><Skildet det="JavaScript is the programming language of HTML and the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced."/></div>
 
-   const Div22=()=><td ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0rKmRMbvC8E9PO5-9z20tBHP7ma1YY-UaEpIEShvQOYa0VWg&usqp=CAU"/> <Skill name="HTML & CSS"/><Skildet det="HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page!"/></div></td>
+   const Div22=()=><div style={{width:'95%',height:"65px",position:"absolute",left:"255px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0rKmRMbvC8E9PO5-9z20tBHP7ma1YY-UaEpIEShvQOYa0VWg&usqp=CAU"/> <Skill name="HTML & CSS"/><Skildet det="HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page!"/></div>
 
-   const Div23=()=><td  ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSleg3sVx7tpXTBVRq1SLFOVJQgyGsMZ4bL8giR_BRROxxWFflT&usqp=CAU"/><Skill name="Python"/><Skildet det="Python is an interpreted, high-level, general-purpose programming language.Python's design philosophy emphasizes code readability with its notable use of significant whitespace. "/></div></td>
+   const Div23=()=><div style={{width:'95%',height:"65px",position:"absolute",left:"515px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSleg3sVx7tpXTBVRq1SLFOVJQgyGsMZ4bL8giR_BRROxxWFflT&usqp=CAU"/><Skill name="Python"/><Skildet det="Python is an interpreted, high-level, general-purpose programming language.Python's design philosophy emphasizes code readability with its notable use of significant whitespace. "/></div>
 
-   const Div24=()=><td><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjH4jQFUVlDJLxRj74fHXaXxlTRgDLBz-gwKplR9zMkytCzStz&usqp=CAU"/><Skill name="MySql"/><Skildet det="MySQL is an open-source relational database management syste  that allows you to manage relational databases. It is open source software backed by Oracle"/></div></td>
+   const Div24=()=><div style={{width:'95%',height:"65px",position:"absolute",left:"715px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjH4jQFUVlDJLxRj74fHXaXxlTRgDLBz-gwKplR9zMkytCzStz&usqp=CAU"/><Skill name="MySql"/><Skildet det="MySQL is an open-source relational database management syste  that allows you to manage relational databases. It is open source software backed by Oracle"/></div>
 
-   const Row1=()=><div style={{position:"relative",top:"55px"}} ><tr><Div21/><Div22/><Div23/><Div24/></tr></div>
+   const Row1=()=><div style={{position:"absolute",width:"95%",top:"55px"}} ><Div21/><Div22/><Div23/><Div24/></div>
    const Div2=()=><div style={{marginLeft:"95px",position:"absolute",top:"335px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Skills</li><Row1/></div>
 
 
