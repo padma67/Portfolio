@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id='a1'></div>
+  <script type="text/babel">
+    const Img=()=><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRzQKMULMC8nKC98CDuE8TDRBZCRy2zy499A&usqp=CAU" style={{width:"100%",height:"655px"}} />
+   const About=()=><div style={{width:"45%",height:"555px",paddingLeft:"425px",fontSize:"21px",position:"absolute",top:"35px",fontFamily:"Pacifico",color:"blue"}} ><p>Name: Padmavathi M</p><p>Father's Name: Machavallavan K</p><p>Date of Birth: 08-07-1998</p><p>Gender: Female</p><p>Marital Status: Single</p><p>Nationality: Indian</p><p>Religion: Hindu</p><p>Linguistic profiency: English,Tamil</p><p>Address: 13,slopper sreet, Cuddalore OT,Cuddalore 607003</p></div>
+  
+   const SideDiv=()=><div style={{width:"100%",height:"635px"}}><About/><Img/></div>
+   ReactDOM.render(<SideDiv/>,document.getElementById("a1"));
+ </script>
+
+</body>
+</html>
