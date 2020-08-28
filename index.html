@@ -4,6 +4,7 @@
     <title>Portfolio</title>
     <meta charset="UTF-8" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <script
@@ -24,54 +25,66 @@
     <script type="text/babel">
   
    const Name=()=><div style={{marginLeft:"15px",color:"white"}}><h1 style={{marginLeft:"31px"}} >Padmavathi</h1><p style={{textAlign:"center",fontSize:"17px"}}>Hi, iam Padmavathi and iam a software developer. welcome to my personal website.</p></div>
-   const A1=()=><a href="#" style={{color:"white"}}><i className="fab fa-facebook-f"></i></a>
-    const A2=()=><a href="https://github.com/padma67" style={{color:"white"}}><i class="fab fa-github"></i></a>
-     const A3=()=><a href="#" style={{color:"white"}}><i class="fab fa-twitter"></i></a>
-      const A4=()=><a  href="mailto: padmaeee1056@gmail.com" style={{color:"white"}}><i class="fab fa-invision"></i></a>
-   const Contact=()=><div style={{marginTop:"45px"}}><tr style={{fontSize:"21px"}}><td><div style={{marginLeft:"35px"}}><A1/></div></td><td><div style={{marginLeft:"35px"}}><A2/></div></td><td><div style={{marginLeft:"35px"}}><A3/></div></td><td><div style={{marginLeft:"35px"}}><A4/></div></td></tr></div>
+    const A2=()=><a href="https://github.com/padma67" style={{color:"white",textDecoration:"none"}}><i class="fab fa-github"></i>Github</a>
+   const Contact=()=><div style={{marginTop:"45px",marginLeft:"55px",fontSize:"25px"}}><A2/></div>
 
    const About=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}} ><a href="sidebar.html" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-circle ip" ></i>About Me</a></div>
    const Resume=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="myprofie.html" style={{color:"white",textDecoration:"none"}}><i class="fas fa-briefcase ip"></i> Resume</a></div>
-   const Portfolio=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-graduate ip"></i>Portfolio</a></div>
-   const Phone=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-circle ip" ></i> Contact</a></div>
-   const SideDiv=()=><div style={{width:"21%",height:"655px",backgroundColor:"DarkOrchid",position:"fixed",left:"0px"}}><Name/><Contact/><About/><Resume/><Portfolio/><Phone/></div>
+   const Phone=()=><div style={{marginLeft:"25px",fontSize:"19px",marginTop:"95px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-phone"></i> 9159926961</a>
+   </div>
+    const Mail=()=><div style={{marginLeft:"25px",fontSize:"19px",marginTop:"35px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="far fa-envelope"></i>padmaeee156@gmail.com</a>
+   </div>
+   const SideDiv=()=><div style={{width:"21%",height:"655px",backgroundColor:"DarkOrchid",position:"fixed",left:"0px"}}><Name/><Contact/><About/><Resume/><Phone/><Mail/></div>
 
    const Div11=()=><div style={{width:"45%",height:"255px",marginLeft:"285px",borderRadius:"55px",border:"9px solid Darkblue",boxShadow:"1px 1px 9px 1px",backgroundColor:"Skyblue"}}><div style={{marginLeft:"75px",width:"65%"}}><h1 style={{textAlign:"center"}}>Padmavathi M</h1><p style={{textAlign:"center"}}>Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as a web developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p><a href="myprofie.html" style={{width:"55px",marginLeft:"65px",fontSize:"21px",textDecoration:"none",color:"white"}}> View My Resume</a></div></div>
    const Div1=()=><div  style={{width:"105%",height:"255px",position:"absolute",top:"15px"}}><Div11/></div>
-   const Skill=(props)=><h2>{props.name}</h2>
-   const Skildet=(props)=><p>{props.det}</p>
-   const Div21=()=><td  ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSA6DkRonP_NSzoXTf13QZ2uHLZGQhNmhwSgDP84s8j-RcpbnP&usqp=CAU"/><Skill name="javascript"/><Skildet det="JavaScript is the programming language of HTML and the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced."/></div></td>
 
-   const Div22=()=><td ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0rKmRMbvC8E9PO5-9z20tBHP7ma1YY-UaEpIEShvQOYa0VWg&usqp=CAU"/> <Skill name="HTML & CSS"/><Skildet det="HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page!"/></div></td>
+   const Div21=()=><div style={{display:"flex"}}><div><img style={{width:"55px",height:"55px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSA6DkRonP_NSzoXTf13QZ2uHLZGQhNmhwSgDP84s8j-RcpbnP&usqp=CAU"/></div><div style={{width:"70%",height:"15px",border:"1px solid black",marginTop:"15px",marginLeft:'45px',borderRadius:"55px",backgroundColor:"lightgrey"}}><div style={{width:"70%",height:"15px",backgroundColor:"grey",borderRadius:"55px"}}></div></div></div>
 
-   const Div23=()=><td  ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSleg3sVx7tpXTBVRq1SLFOVJQgyGsMZ4bL8giR_BRROxxWFflT&usqp=CAU"/><Skill name="Python"/><Skildet det="Python is an interpreted, high-level, general-purpose programming language.Python's design philosophy emphasizes code readability with its notable use of significant whitespace. "/></div></td>
+   const Div22=()=><div style={{display:"flex",marginTop:"15px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0rKmRMbvC8E9PO5-9z20tBHP7ma1YY-UaEpIEShvQOYa0VWg&usqp=CAU"/> <div style={{width:"70%",height:"15px",border:"1px solid black",marginTop:"15px",marginLeft:'45px',borderRadius:"55px",backgroundColor:"lightgrey"}}><div style={{width:"80%",height:"15px",backgroundColor:"grey",borderRadius:"55px"}}></div></div></div>
 
-   const Div24=()=><td><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjH4jQFUVlDJLxRj74fHXaXxlTRgDLBz-gwKplR9zMkytCzStz&usqp=CAU"/><Skill name="MySql"/><Skildet det="MySQL is an open-source relational database management syste  that allows you to manage relational databases. It is open source software backed by Oracle"/></div></td>
+   const Div23=()=><div style={{display:"flex",marginTop:"15px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSleg3sVx7tpXTBVRq1SLFOVJQgyGsMZ4bL8giR_BRROxxWFflT&usqp=CAU"/><div style={{width:"70%",height:"15px",border:"1px solid black",marginTop:"15px",marginLeft:'45px',borderRadius:"55px",backgroundColor:"lightgrey"}}><div style={{width:"65%",height:"15px",backgroundColor:"grey",borderRadius:"55px"}}></div></div></div>
 
-   const Row1=()=><div style={{position:"relative",top:"55px"}} ><tr><Div21/><Div22/><Div23/><Div24/></tr></div>
-   const Div2=()=><div style={{marginLeft:"95px",position:"absolute",top:"335px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Skills</li><Row1/></div>
+   const Div24=()=><div style={{display:"flex",marginTop:"15px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjH4jQFUVlDJLxRj74fHXaXxlTRgDLBz-gwKplR9zMkytCzStz&usqp=CAU"/><div style={{width:"70%",height:"15px",border:"1px solid black",marginTop:"15px",marginLeft:'45px',borderRadius:"55px",backgroundColor:"lightgrey"}}><div style={{width:"60%",height:"15px",backgroundColor:"grey",borderRadius:"55px"}}></div></div></div>
+
+   const Row1=()=><div style={{position:"relative",top:"25px"}} ><Div21/><Div22/><Div23/><Div24/></div>
+   const Div2=()=><div style={{marginLeft:"95px",position:"absolute",top:"335px",width:"90%"}}><li style={{listStyleType:"square",fontSize:"41px",textDecoration:"bold"}}>Skills</li><Row1/></div>
 
 
-   const Education=()=><div style={{marginLeft:"95px",position:"absolute",top:"775px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Education</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRENJ2KcfGreGeaa130N3KlZ-HJhglwYMyDCw5hOAXSGarcEyAb&usqp=CAU"/>
-    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p>completed sslc at St.Philomina's Girls High School with 96% in year of 2013</p><p>completed HSC at St.Anne's Girls Hr. Sec. School with 86% in year of 2015</p>
-        <p>studied B.E(EEE) from Arunai Engineering College with 7.5GPA in year of 2019</p></div>
+   const Education=()=><div style={{marginLeft:"95px",position:"absolute",top:"775px"}}><li style={{listStyleType:"square",fontSize:"41px",textDecoration:"bold"}}>Education</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRENJ2KcfGreGeaa130N3KlZ-HJhglwYMyDCw5hOAXSGarcEyAb&usqp=CAU"/>
+    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p><li>Completed sslc at St.Philomina's Girls High School with 96% in year of 2013</li></p><p><li>Completed HSC at St.Anne's Girls Hr. Sec. School with 86% in year of 2015</li></p>
+        <p><li>Studied B.E(EEE) from Arunai Engineering College with 7.5GPA in year of 2019 </li></p></div>
    </div>
 
 
-   const Activities=()=><div style={{marginLeft:"95px",position:"absolute",top:"1155px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Extra Activities and hobbies</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4kjm0rvzbKjjtWqSv9ZVvJr9SVAuzHXkoQPoEWJdBADdvCVb5&usqp=CAU"/>
-    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p>Participated in cultural activities in  College</p>
-          <p>Attended NCC camp </p>
-          <p>Spent free time on learn new technologies</p>
-          <p>Having interest in drawing and reading books</p> 
-          <p>Like to do innovative things</p></div>
+   const Activities=()=><div style={{marginLeft:"95px",position:"absolute",top:"1155px"}}><li style={{listStyleType:"square",fontSize:"41px",textDecoration:"bold"}}>Extra Activities and hobbies</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4kjm0rvzbKjjtWqSv9ZVvJr9SVAuzHXkoQPoEWJdBADdvCVb5&usqp=CAU"/>
+    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p><li>Participated in cultural activities in  College</li></p>
+          <p><li>Attended NCC camp </li></p>
+          <p><li>Spent free time on learn new technologies</li></p>
+          <p><li>Having interest in drawing and reading books</li></p> 
+          <p><li>Like to do innovative things</li></p></div>
    </div>
 
-   const Workshop=()=><div style={{marginLeft:"95px",position:"absolute",top:"1525px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>WorkShops</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHRtfHoKjXhG85Ni7Q3z82bqvZLvLpGjI31JNoyixCjlsifyTy&usqp=CAU"/>
-    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p> E-Commerce and its industrial applications by Department of management  studies</p>
-            <p>International symposium on Technical education as a tool for sustainable development</p>
-            <p>Convention on direct and indirect taxes in India (GST) by Department  of management.</p></div>
+   const Workshop=()=><div style={{marginLeft:"95px",position:"absolute",top:"1525px"}}><li style={{listStyleType:"square",fontSize:"41px",textDecoration:"bold"}}>WorkShops</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHRtfHoKjXhG85Ni7Q3z82bqvZLvLpGjI31JNoyixCjlsifyTy&usqp=CAU"/>
+    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p> <li>E-Commerce and its industrial applications by Department of management  studies</li></p>
+            <p><li>International symposium on Technical education as a tool for sustainable development</li></p>
+            <p><li>Convention on direct and indirect taxes in India (GST) by Department  of management.</li></p></div>
    </div>
-   const MainDiv1=()=><div style={{width:"79%",height:"1935px",position:"absolute",left:"275px",top:"0px"}}><Div1/><Div2/><Education/><Activities/><Workshop/></div>
+  const Counter=()=><div style={{position:"absolute"}} ><a href="https://github.com/padma67/Counter-App"><img style={{width:"385px",height:"255px",marginTop:"25px"}} src="https://themeskills.com/wp-content/uploads/2019/07/animated-counter-featured.png"/></a><p style={{marginLeft:"95px",marginTop:"5px",width:"285px"}}>Conter App-view in github</p>
+   </div>
+
+   const Tictac=()=><div style={{marginLeft:'465px',position:"absolute"}} ><a href="https://github.com/padma67/Tic-toc-toe-game-"><img style={{width:"385px",height:"255px",marginTop:"25px",}} src="https://images.cdn1.stockunlimited.net/preview1300/tic-tac-toe-game_1242239.jpg"/></a><p style={{marginLeft:"95px",marginTop:"5px",width:"285px"}}>Tic-Toc-Toe game-view in github</p>
+   </div>
+   
+   const Task=()=><div style={{position:"absolute",marginTop:"355px"}}  ><a href="https://github.com/padma67/createcard/tree/master/craeteCard"><img style={{width:"385px",height:"255px",marginTop:"25px"}} src="https://i.pinimg.com/originals/9d/a7/e8/9da7e86e69907f50d3949201cac3db1f.jpg"/></a><p style={{marginLeft:"95px",marginTop:"5px",width:"285px"}}>Task Tracker-view in gi11thub</p>
+   </div>
+
+    const Student=()=><div style={{position:"absolute",marginTop:"355px",marginLeft:'465px'}}  ><a href="https://github.com/padma67/login-form"><img style={{width:"385px",height:"255px",marginTop:"25px"}} src="https://w3layouts.com/wp-content/uploads/2017/07/basic_login_form_Free19-05-2017_1315571736.jpg"/></a><p style={{marginLeft:"95px",marginTop:"5px",width:"285px"}}>Login Form-view in gi11thub</p>
+   </div>
+   const Project=()=><div style={{marginLeft:"95px",position:"absolute",top:"1925px"}}><li style={{listStyleType:"square",fontSize:"41px",textDecoration:"bold"}}>Project</li><Counter/><Tictac/><Task/><Student/></div>
+
+
+   const MainDiv1=()=><div style={{width:"79%",height:"1935px",position:"absolute",left:"275px",top:"0px",fontFamily:"Acme"}}><Div1/><Div2/><Education/><Activities/><Workshop/><Project/></div>
 
 
 
